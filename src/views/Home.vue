@@ -20,7 +20,6 @@ export default {
 
 <style>
 .under-construction {
-  width: 90%;
   margin: 20px auto;
   max-width: 1200px;
 }
