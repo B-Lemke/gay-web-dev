@@ -1,5 +1,5 @@
 <template>
-  <div class="max-width">
+  <div class="max-width p-2">
     <title-styled format="bars">Page not found!</title-styled>
     <router-link to="/">Go Home!</router-link>
   </div>
