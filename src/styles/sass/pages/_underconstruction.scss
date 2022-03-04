@@ -1,0 +1,13 @@
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $secondary;
+    img {
+        object-fit: contain;
+    }
+
+    @include media-breakpoint-down(xs) {
+        height: 60vh;
+    }
+}
