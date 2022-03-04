@@ -22,6 +22,17 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Test.vue"),
   },
+  /* Default/404 */
+  {
+    path: "/404",
+    alias: "/:pathMatch(.*)*",
+    name: "404",
+    component: () =>
+      import(
+        /*webpackChunkName: "NotFound" */
+        "../views/404.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
