@@ -1,9 +1,9 @@
 <template>
   <footer class="bg-dark text-light row w-100 py-5 px-4 mx-0">
     <div
-      class="col-12 col-lg-2 d-flex flex-column justify-content-between px-1 mb-4 text-center text-lg-left"
+      class="col-12 col-lg-2 d-flex flex-column justify-content-between px-1 mb-4"
     >
-      <i class="fas fa-heart footer-heart"></i>
+      <fa icon="heart" size="lg" fixed-width class="footer-heart" />
       <div>
         <small
           >&copy; Broderick Lemke
@@ -22,14 +22,21 @@
     <div class="col-6 col-lg-2 d-flex flex-column justify-content-center mb-4">
       <ul class="m-0 list-unstyled">
         <li>
-          <a href="#"><i class="fab fa-github mr-2 text-info"></i>Github</a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-twitter mr-2 text-info"></i>Twitter</a>
+          <a href="#"
+            ><fa :icon="['fab', 'github']" class="mr-2 text-info" />Github</a
+          >
         </li>
         <li>
           <a href="#"
-            ><i class="fab fa-linkedin-in mr-2 text-info"></i>LinkedIn</a
+            ><fa :icon="['fab', 'twitter']" class="mr-2 text-info" />Twitter</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><fa
+              :icon="['fab', 'linkedin-in']"
+              class="mr-2 text-info"
+            />LinkedIn</a
           >
         </li>
       </ul>
@@ -63,8 +70,8 @@
           colleagues. Please reach out to me at:
         </p>
         <p class="m-0">
-          <i class="fas fa-envelope mr-2 text-primary"></i
-          >website-email@email.com
+          <fa icon="envelope" class="mr-2 text-primary" />
+          website-email@email.com
         </p>
       </div>
     </div>

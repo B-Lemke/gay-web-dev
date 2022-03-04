@@ -9,7 +9,6 @@
 <script>
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
-
 export default {
   components: {
     TheHeader,
@@ -19,5 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/main.scss"; //Here i add extra "./"(current directory)
+@import "@/styles/main.scss";
 </style>

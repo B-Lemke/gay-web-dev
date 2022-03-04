@@ -1,6 +1,7 @@
 <template>
   <div class="h-100 d-flex flex-column justify-content-center">
     <title-styled format="bars">Home</title-styled>
+
     <img
       class="under-construction"
       src="@/assets/images/underconstruction.gif"
@@ -20,6 +21,7 @@ export default {
 
 <style>
 .under-construction {
+  width: 90%;
   margin: 20px auto;
   max-width: 1200px;
 }
