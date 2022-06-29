@@ -1,8 +1,8 @@
 <template>
   <the-header></the-header>
-  <main>
+  <div>
     <router-view />
-  </main>
+  </div>
   <the-footer></the-footer>
 </template>
 
@@ -13,6 +13,12 @@ export default {
   components: {
     TheHeader,
     TheFooter,
+  },
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "Gay Web Dev",
+    // all titles will be injected into this template
+    titleTemplate: "%s | Gay Web Dev",
   },
 };
 </script>

@@ -15,7 +15,9 @@
 <script>
 export default {
   props: ["format"],
-  data() {},
+  data() {
+    return {};
+  },
 };
 </script>
 
