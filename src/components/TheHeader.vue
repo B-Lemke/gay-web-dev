@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="above-shapes">
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between"
     >

@@ -166,16 +166,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="background-svgs">
-      <SvgSprite class="svg-shape" symbol="abstract" size="24" />
+      <background-shapes></background-shapes>
     </div>
   </main>
 </template>
 
 <script>
 //import TitleStyled from "@/components/TitleStyled.vue";
-import { SvgSprite } from "vue-svg-sprite";
+import BackgroundShapes from "@/components/BackgroundShapes.vue";
 
 export default {
   name: "Home",
@@ -184,7 +182,7 @@ export default {
       parallaxEl: undefined,
     };
   },
-  components: { SvgSprite },
+  components: { BackgroundShapes },
   mounted() {
     this.parallaxEl = document.getElementById("parallax");
     window.addEventListener("scroll", this.scroll);

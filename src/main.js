@@ -19,8 +19,8 @@ createApp(App)
   .component("fa", FontAwesomeIcon)
   .use(router)
   .use(svgSpritePlugin, {
-    url: "@/assets/images/homepage/sprites.svg",
-    class: "drawing-sprites",
+    url: require("./assets/images/homepage/sprites.svg"),
+    class: "svg-shape",
   })
   .use(createPinia())
   .mount("#app");
