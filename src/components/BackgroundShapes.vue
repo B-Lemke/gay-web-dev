@@ -119,7 +119,6 @@ function MoveShapes() {
 
     let newX = anime.random(-10, 100);
     while (-20 < newX - lastX && newX - lastX < 20) {
-      console.log("Relooping", lastX, newX);
       newX = anime.random(-10, 90);
     }
     lastX = newX;

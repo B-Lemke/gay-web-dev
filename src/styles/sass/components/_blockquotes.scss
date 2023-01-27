@@ -59,3 +59,16 @@
     }
   }
 }
+
+
+@include media-breakpoint-down(md) {
+  .blockquote-content {
+    flex-direction: column;
+  }
+
+  .blockquote-image {
+    max-width: 200px;
+    margin-bottom: 50px;
+  }
+
+ }

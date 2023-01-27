@@ -6,8 +6,7 @@
       <fa icon="heart" size="lg" fixed-width class="footer-heart" />
       <div>
         <small
-          >&copy; Broderick Lemke
-          <span class="current-year-replace">2020</span></small
+          >&copy; Broderick Lemke <span>{{ currentYear }}</span></small
         >
       </div>
     </div>
@@ -16,23 +15,22 @@
         <li><a href="#">About Me</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
       </ul>
     </div>
     <div class="col-6 col-lg-2 d-flex flex-column justify-content-center mb-4">
       <ul class="m-0 list-unstyled">
         <li>
-          <a href="#"
+          <a href="https://github.com/B-Lemke"
             ><fa :icon="['fab', 'github']" class="mr-2 text-info" />Github</a
           >
         </li>
         <li>
-          <a href="#"
+          <a href="https://twitter.com/LemkeBroderick"
             ><fa :icon="['fab', 'twitter']" class="mr-2 text-info" />Twitter</a
           >
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.linkedin.com/in/broderick-lemke/"
             ><fa
               :icon="['fab', 'linkedin-in']"
               class="mr-2 text-info"
@@ -41,26 +39,13 @@
         </li>
       </ul>
     </div>
+
     <div class="col-lg-3 d-flex flex-column justify-content-center mb-4">
-      <label for="subscribeToBlog">Subscribe to my blog</label>
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control footer-email-dark font-italic replace-placeholder-email"
-          placeholder="mscott@dminfinity.net"
-          aria-label="Subscribe to my blog"
-          aria-describedby="footerSubscribeToBlog"
-        />
-        <div class="input-group-append">
-          <button
-            class="btn btn-outline-light footer-email-button"
-            type="button"
-            id="footerSubscribeToBlog"
-          >
-            Ok!
-          </button>
-        </div>
-      </div>
+      <p class="my-0">
+        The only way to deal with an unfree world is to become so absolutely
+        free that your very existence is an act of rebellion. <br />&mdash;
+        Albert Camus
+      </p>
     </div>
     <div class="col-lg-3 d-flex flex-column justify-content-center">
       <div>
@@ -71,7 +56,7 @@
         </p>
         <p class="m-0">
           <fa icon="envelope" class="mr-2 text-primary" />
-          website-email@email.com
+          admin@gayweb.dev
         </p>
       </div>
     </div>
@@ -81,7 +66,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      currentYear: new Date().getFullYear(),
+    };
   },
 };
 </script>

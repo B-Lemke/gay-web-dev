@@ -32,9 +32,9 @@
           <li class="nav-item mr-3 text-light text-center">
             <a class="nav-link styled-link" href="www.google.com">About</a>
           </li>
-          <li class="nav-item mr-3 text-center">
+          <!--<li class="nav-item mr-3 text-center">
             <a class="nav-link styled-link" href="www.google.com">Blog</a>
-          </li>
+          </li>-->
           <li class="nav-item mr-3 text-center">
             <a class="nav-link styled-link" href="www.google.com">Portfolio</a>
           </li>
