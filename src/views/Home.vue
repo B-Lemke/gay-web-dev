@@ -123,14 +123,23 @@
             class="spotlight-image"
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 geek-item">
           <div class="title title-stacked title-mono">
             What Kind of Work Do I Do?
           </div>
-          <p>In my current position, my work spans</p>
-          <p class="d-flex flex-row-reverse">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </p>
+          <div class="geek-blurb m-2">
+            <p>
+              In my current position, my work spans from the front of the front
+              end to the back of the back end. I have done UX/UI design,
+              CSS/SCSS, JavaScript including the Vue and React libraries, Unit
+              Testing, .Net Core APIs, Python data cleanup, SQL, and NoSQL. When
+              it comes to programming, I'm always open to learning new skills
+              and having fun.
+            </p>
+            <p class="d-flex flex-row-reverse">
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </p>
+          </div>
 
           <div class="image-gallery row">
             <div class="col-md-6">
