@@ -7,7 +7,10 @@
     >
       <div class="blockquote-content">
         <div class="blockquote-image">
-          <img :src="require('@/assets/images/' + imageName)" />
+          <img
+            :src="require('@/assets/images/' + imageName)"
+            class="hoverPic"
+          />
         </div>
         <div class="blockquote-quote">
           <div class="blockquote-text">

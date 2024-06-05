@@ -30,7 +30,7 @@
             <img
               src="@/assets/images/homepage/computer.png"
               alt=""
-              class="geek-images"
+              class="geek-images hoverPic"
             />
             <div class="geek-blurb">
               <h4>Full-Stack Developer</h4>
@@ -54,7 +54,7 @@
             <img
               src="@/assets/images/homepage/charity.png"
               alt=""
-              class="geek-images"
+              class="geek-images hoverPic"
             />
             <div class="geek-blurb">
               <h4>Nerd</h4>
@@ -78,7 +78,7 @@
             <img
               src="@/assets/images/homepage/destijl.png"
               alt=""
-              class="geek-images"
+              class="geek-images hoverPic"
             />
             <div class="geek-blurb">
               <h4>Musician & Artist</h4>
@@ -120,7 +120,7 @@
           <img
             src="@/assets/images/homepage/tobbysit.jpg"
             alt=""
-            class="spotlight-image"
+            class="spotlight-image tobbyGridPic"
           />
         </div>
         <div class="col-md-6 geek-item">
@@ -144,32 +144,34 @@
           <div class="image-gallery row">
             <div class="col-md-6">
               <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
+                ><img
+                  src="@/assets/images/tobby/tobbySquare1.jpg"
+                  alt="Tobby in a baby playpen"
+                  class="tobbyGridPic hoverPic"
               /></a>
             </div>
             <div class="col-md-6">
               <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
+                ><img
+                  src="@/assets/images/tobby/tobbySquare2.jpg"
+                  alt="Tobby near a tower"
+                  class="tobbyGridPic hoverPic"
               /></a>
             </div>
             <div class="col-md-6">
               <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
+                ><img
+                  src="@/assets/images/tobby/tobbySquare3.jpg"
+                  alt="Tobby near pumpkins"
+                  class="tobbyGridPic hoverPic"
               /></a>
             </div>
             <div class="col-md-6">
               <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
-              /></a>
-            </div>
-            <div class="col-md-6">
-              <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
-              /></a>
-            </div>
-            <div class="col-md-6">
-              <a href="#"
-                ><img src="@/assets/images/tobysquare.jpg" alt=""
+                ><img
+                  src="@/assets/images/tobby/tobbySquare4.jpg"
+                  alt="Tobby and his ball in front of a christmas tree"
+                  class="tobbyGridPic hoverPic"
               /></a>
             </div>
           </div>

@@ -16,7 +16,6 @@ main {
 }
 
 main {
-
   overflow-y: hidden;
 }
 
@@ -235,6 +234,7 @@ main {
     width: 75%;
     margin: 50px auto;
     display: block;
+    border-radius: 5px;
     //clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 
     box-shadow: $box-shadow-dark;
@@ -256,6 +256,7 @@ main {
     }
   }
 }
+
 
 @include media-breakpoint-down(md) {
   .geek-item {
@@ -290,7 +291,7 @@ main {
 .svg-shape {
   z-index: 1;
   position: absolute;
-  fill: #E2E1DA;
+  fill: #e2e1da;
   overflow: hidden;
 }
 

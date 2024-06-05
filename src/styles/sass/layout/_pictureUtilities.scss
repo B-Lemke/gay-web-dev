@@ -1,0 +1,14 @@
+.tobbyGridPic {
+    box-shadow: $box-shadow-dark;
+    border-radius: 5px;
+  }
+  
+  .hoverPic {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .hoverPic:hover {
+    transform: scale(1.1) ;
+    box-shadow: $box-shadow-darkest;
+  }
+  

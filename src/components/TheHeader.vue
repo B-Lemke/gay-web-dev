@@ -36,10 +36,19 @@
             <a class="nav-link styled-link" href="www.google.com">Blog</a>
           </li>-->
           <li class="nav-item mr-3 text-center">
-            <a class="nav-link styled-link" href="www.google.com">Portfolio</a>
+            <a class="nav-link styled-link" href="www.google.com"
+              >Programming</a
+            >
           </li>
           <li class="nav-item mr-3 text-center">
-            <a class="nav-link styled-link" href="www.google.com">Contact</a>
+            <a class="nav-link styled-link" href="www.google.com"
+              >Performance</a
+            >
+          </li>
+          <li class="nav-item mr-3 text-center">
+            <a class="nav-link styled-link" href="www.google.com"
+              >Art & Music</a
+            >
           </li>
         </ul>
       </div>
