@@ -63,7 +63,8 @@
 
 @include media-breakpoint-down(md) {
   .blockquote-content {
-    flex-direction: column;
+    flex-direction: column !important;
+
   }
 
   .blockquote-image {
