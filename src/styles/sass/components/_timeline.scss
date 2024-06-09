@@ -1,0 +1,158 @@
+// https://codepen.io/MarkBoots/pen/OJOqNyB Inspo
+
+
+.timeline {
+    --col-gap: 2rem;
+    --row-gap: 2rem;
+    --line-w: 0.25rem;
+    display: grid;
+    grid-template-columns: var(--line-w) 1fr;
+    grid-auto-columns: max-content;
+    column-gap: var(--col-gap);
+    list-style: none;
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  /* line */
+  .timeline::before {
+    content: "";
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    background: $dark;
+    border-radius: calc(var(--line-w) / 2);
+  }
+  
+  /* row gaps */
+  .timeline li:not(:last-child) {
+    margin-bottom: var(--row-gap);
+  }
+
+  .timeline li:first-child {
+    margin-top: var(--row-gap);
+  }
+  
+  /* card */
+  .timeline li {
+    grid-column: 2;
+    --inlineP: 1.5rem;
+    margin-inline: var(--inlineP);
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    padding: 10px;
+    box-shadow: $box-shadow-light;
+  }
+
+  .timeline li .timeline-title {
+
+    position: relative;
+    background-color: $dark;
+    color: $pale-yellow;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto 0;
+    //box-shadow: $box-shadow-light;
+  }
+  .timeline li .timeline-body {
+    background-color: $pale-yellow;
+    padding: 10px;
+    //box-shadow: $box-shadow-light;
+  }
+
+  .timeline li.primary {
+    background-color: $primary;
+    img {
+        border:4px $primary solid;
+    }
+    .timeline-title::after{
+        border: 0.3rem solid $primary;
+    }
+  }
+  .timeline li.secondary {
+    background-color: $secondary;
+    img {
+        border:4px $secondary solid;
+    }
+    .timeline-title::after{
+        border: 0.3rem solid $secondary;
+    }
+  }
+  .timeline li.info {
+    background-color: $info;
+    img {
+        border:4px $info solid;
+    }
+
+    .timeline-title::after{
+        border: 0.3rem solid $info;
+    }
+  }
+  
+  /* circle */
+  .timeline li .timeline-title::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: $pale-yellow;
+
+    border-radius: 50%;
+    top: 50%;
+  
+    transform: translate(50%, -50%);
+    right: calc(100% + var(--col-gap) + var(--line-w) + 65px / 2);
+  }
+  
+  
+  
+  @media (min-width: 40rem) {
+    .timeline {
+      grid-template-columns: 1fr var(--line-w) 1fr;
+    }
+    .timeline::before {
+      grid-column: 2;
+    }
+    .timeline li:nth-child(odd) {
+      grid-column: 1;
+    }
+    .timeline li:nth-child(even) {
+      grid-column: 3;
+    }
+  
+    /* start second card */
+    .timeline li:nth-child(2) {
+      grid-row: 2/4;
+    }
+  
+    .timeline li:nth-child(odd) .timeline-title::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+      left: 0;
+    }
+  
+    .timeline li:nth-child(odd) .timeline-title::after {
+      transform: translate(-50%, -50%);
+      left: calc(100% + var(--col-gap) + var(--line-w)  + 65px / 2);
+    }
+    .timeline li:nth-child(odd) .timeline-title {
+      border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+    }
+  }
+  
+  
+  // On mobile:
+  @include media-breakpoint-down(md) {
+    .timeline img {
+        max-width: 100px;
+
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .timeline-title {
+        text-align: center;
+    }
+  }
+  
+ 
