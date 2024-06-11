@@ -20,19 +20,24 @@ const routes = [
     path: "/portfolio",
     name: "Portfolio",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
+      import(/* webpackChunkName: "portfolio" */ "../views/Portfolio.vue"),
   },
   {
     path: "/gallery",
     name: "Gallery",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Gallery.vue"),
+      import(/* webpackChunkName: "gallery" */ "../views/Gallery.vue"),
+  },
+  {
+    path: "/performance",
+    name: "Performance",
+    component: () =>
+      import(/* webpackChunkName: "performance" */ "../views/Performance.vue"),
   },
   {
     path: "/test",
     name: "Test",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Test.vue"),
+    component: () => import(/* webpackChunkName: "test" */ "../views/Test.vue"),
   },
   /* Default/404 */
   {

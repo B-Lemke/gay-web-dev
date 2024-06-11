@@ -3,7 +3,7 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between"
     >
-      <a class="navbar-brand gwd-logo" href="#">
+      <a class="navbar-brand gwd-logo" href="#" @click="goHome">
         <div id="logo-g">G</div>
         <div id="logo-a" class="invis-at-first">A</div>
         <div id="logo-y" class="invis-at-first">Y</div>
@@ -30,24 +30,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mr-3 text-light text-center">
-            <a class="nav-link styled-link" href="www.google.com">About</a>
+            <router-link class="nav-link styled-link" to="/about"
+              >About</router-link
+            >
           </li>
           <!--<li class="nav-item mr-3 text-center">
             <a class="nav-link styled-link" href="www.google.com">Blog</a>
           </li>-->
           <li class="nav-item mr-3 text-center">
-            <a class="nav-link styled-link" href="www.google.com"
-              >Programming</a
+            <router-link class="nav-link styled-link" to="/portfolio"
+              >Programming</router-link
             >
           </li>
           <li class="nav-item mr-3 text-center">
-            <a class="nav-link styled-link" href="www.google.com"
-              >Performance</a
+            <router-link class="nav-link styled-link" to="/performance"
+              >Performance</router-link
             >
           </li>
           <li class="nav-item mr-3 text-center">
-            <a class="nav-link styled-link" href="www.google.com"
-              >Art & Music</a
+            <router-link class="nav-link styled-link" to="/gallery"
+              >Art & Music</router-link
             >
           </li>
         </ul>
@@ -56,10 +58,12 @@
   </header>
 </template>
 
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
+<script setup>
+import { useRouter } from "vue-router";
+
+let router = useRouter();
+
+function goHome() {
+  router.push("/");
+}
 </script>

@@ -1,0 +1,28 @@
+.about-intro {
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+}
+.about-pic {
+    max-height: 100vh;
+    object-fit: cover;
+  }
+
+  .about-intro-container {
+    box-shadow: $box-shadow-light;
+  }
+
+  // On mobile:
+  @include media-breakpoint-down(md) {
+    .about-intro {
+        padding: 50px;
+    }
+
+    .about-pic {
+        max-height: 300px;
+    }
+  }
+  
+ 
